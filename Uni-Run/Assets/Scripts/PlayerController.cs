@@ -77,6 +77,8 @@ public class PlayerController : MonoBehaviour {
         isDead= true;
 
 
+        GameManager.instance.OnPlayerDead();
+
    }
 
    private void OnTriggerEnter2D(Collider2D other) {
